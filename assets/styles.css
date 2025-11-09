@@ -24,7 +24,7 @@ body .watermark {
 header {
     width: 100%;
     height: 13%;
-    background-color: var(--oscuro);
+    background-color: hsla(0, 96%, 43%);;
     display: flex;
     position: fixed;
     top: 0;
@@ -96,8 +96,8 @@ header .mobile {
 .hero img {
     width: 15vw;
     margin-bottom: 40px;
-    background-color: #e5383b;
-    box-shadow: 0 0 10px 0;
+    background-color: hsla(0, 96%, 43%, 0.856);
+    box-shadow: 0 0 6px 0 #000000;
 }
 
 .hero .botones {
@@ -114,7 +114,7 @@ header .mobile {
     display: flex;
     color: white;
     font-size: 2rem;
-    background-color: #8d0801b9;
+    background-color: hsla(0, 96%, 38%, 0.486);
     padding: 20px;
     border-radius: 16%;
     backdrop-filter: blur(2px);
@@ -122,47 +122,30 @@ header .mobile {
 
 .hero .botones i.whatsapp {
     color: #25D366;
+   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
 }
 
 .hero .botones i.facebook {
     color: #1877F2;
+   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
 }
 
 .hero .botones i.instagram {
     background: radial-gradient(circle at 30% 110%, #ffdb8b 0%, #ee653d 25%, #d42e81 50%, #a237b6 75%, #3e57bc 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.hero .botones i.mail {
-    background: linear-gradient(135deg,
-            #4285f4 0%,
-            #34a853 25%,
-            #fbbc05 50%,
-            #ea4335 75%,
-            #ea4335 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    display: inline-block;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
 }
 
-.hero .botones i.web {
-    background: linear-gradient(135deg, #909090, #ffffff);
+.hero .botones i.web, .hero .botones i.mail, .hero .botones i.mobile {
+    background: linear-gradient(180deg, #909090, #ffffff);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
 }
 
-.hero .botones i.mobile {
-    background-image: linear-gradient(180deg, #48e 80%, #222 80%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
-}
+/* RESPONSIVE DESIGN */
 
 @media (max-width: 1680px) {
 
