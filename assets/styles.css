@@ -345,7 +345,7 @@ header .mobile {
 
     
 .estrellas {
-    background-size: 80%;
+    background-size: 90%;
 }
 
 
@@ -375,6 +375,11 @@ header .mobile {
 }
 
 @media (max-width: 360px) {
+
+        
+.estrellas {
+    background-size: 130%;
+}
 
     .menu.desktop {
         display: none;
@@ -426,6 +431,10 @@ header .mobile {
 
     .menu.desktop {
         display: none;
+    }
+
+    .hero__img .hero_title a {
+        font-size: 1rem;
     }
 
     .menu.mobile .logo {
