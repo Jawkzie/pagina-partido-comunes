@@ -125,7 +125,24 @@ header .mobile {
     width: 15vw;
     margin-bottom: 40px;
     background-color: hsla(0, 96%, 43%, 0.801);
+    backdrop-filter: blur(2px);
     box-shadow: 0 0 6px 0 #000000;
+    border-radius: 256px;
+}
+
+.hero .hero_title {
+    font-size: 1.4rem;
+    color: #1000f1;
+    font-family: sans-serif;
+    margin: 0;
+    position: relative;
+    bottom: 30px;
+    background-color: hsla(0, 0%, 49%, 0.24);
+    padding: 10px;
+    border-radius: 16px;
+    width: fit-content;
+    margin: auto;
+    backdrop-filter: blur(2px);
 }
 
 .hero .botones {
@@ -142,7 +159,7 @@ header .mobile {
     display: flex;
     color: white;
     font-size: 2rem;
-    background-color: hsla(0, 96%, 38%, 0.7);
+    background-color: hsla(0, 0%, 49%, 0.24);
     padding: 20px;
     border-radius: 16%;
     backdrop-filter: blur(2px);
@@ -174,6 +191,14 @@ header .mobile {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.hero .botones .elementos.inscripcion a {
+    border-radius: 0px;
+}
+
+.hero .botones .elementos.inscripcion a i {
+    padding-right: 20px;
 }
 
 /* RESPONSIVE DESIGN */
@@ -285,12 +310,6 @@ header .mobile {
 }
 
 @media (max-width: 768px) {
-
-
-        
-    .estrellas {
-        background-size: 80%;
-    }
 
     header .menu .logo img {
         width: 90px;
